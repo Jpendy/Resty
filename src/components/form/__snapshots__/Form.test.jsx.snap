@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component renders Form 1`] = `
+<Fragment>
+  <form>
+    <input
+      type="text"
+      value={
+        Object {
+          "apiUrl": "url",
+          "fetchBody": "body",
+          "onChange": [Function],
+          "onSubmit": [Function],
+        }
+      }
+    />
+    <label>
+       GET 
+      <input
+        name="fetch-method"
+        type="radio"
+        value="GET"
+      />
+       
+    </label>
+    <label>
+       POST 
+      <input
+        name="fetch-method"
+        type="radio"
+        value="POST"
+      />
+       
+    </label>
+    <label>
+       PUT 
+      <input
+        name="fetch-method"
+        type="radio"
+        value="PUT"
+      />
+       
+    </label>
+    <label>
+       DELETE 
+      <input
+        name="fetch-method"
+        type="radio"
+        value="DELETE"
+      />
+       
+    </label>
+    <textarea
+      value={Object {}}
+    />
+    <button>
+      Go
+    </button>
+  </form>
+</Fragment>
+`;
