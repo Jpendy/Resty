@@ -1,7 +1,8 @@
 import React from 'react';
-import Form from '../form/Form';
+import MainContainer from '../../containers/mainContainer';
+import './App.css';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return <MainContainer />;
 }
   

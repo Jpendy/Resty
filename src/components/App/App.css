@@ -1,0 +1,45 @@
+body {
+    background: lightskyblue;
+    text-align: center;
+}
+
+label input {
+    margin: 20px;
+    padding: 5px;
+    display: none;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+}
+
+
+p {
+    display: inline;
+    margin: 10px;
+}
+
+input[type=radio]:checked + p{
+    border: 1px solid blue;
+    background: lawngreen;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px;
+}
+
+form {
+    margin: auto;
+    text-align: center;  
+}
+
+input:first-of-type {
+    margin: 20px;
+    width: 400px
+}
+
+textarea:first-of-type {
+    margin-top: 20px;
+    width: 400px;
+    height: 120px
+}
