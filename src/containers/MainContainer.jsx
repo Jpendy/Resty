@@ -32,7 +32,7 @@ export default class MainContainer extends Component {
       return (
         <>
           <Form apiUrl={apiUrl} fetchBody={fetchBody} fetchMethod={fetchMethod} onChange={this.handleChange} onSubmit={this.handleSubmit} />
-          { fetchedArray && <Display fetchedArray={fetchedArray} />} 
+          <section> { fetchedArray && <Display fetchedArray={fetchedArray} />} </section>
         </>
       );
         
