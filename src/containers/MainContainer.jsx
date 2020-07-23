@@ -33,19 +33,22 @@ export default class MainContainer extends Component {
 
       return (
         <>
-          <section>
-            { historyArray && <History historyArray={historyArray} />}
-          </section>
+          <div style={ { display: 'flex', justifyContent: 'space-evenly' } }>
+            <section>
+              <History historyArray={historyArray} />
+            </section>
 
-          <section> 
-            <Form 
-              apiUrl={apiUrl} 
-              fetchBody={fetchBody} 
-              fetchMethod={fetchMethod} 
-              onChange={this.handleChange}
-              onSubmit={this.handleSubmit}
-            />
-
+            <section> 
+              <Form 
+                apiUrl={apiUrl} 
+                fetchBody={fetchBody} 
+                fetchMethod={fetchMethod} 
+                onChange={this.handleChange}
+                onSubmit={this.handleSubmit}
+              />
+            </section>
+          </div>
+          <section style={{ alignSelf: 'flex-end' }} >              
             { fetchedArray && <Display fetchedArray={fetchedArray} />}
           </section>
         </>
