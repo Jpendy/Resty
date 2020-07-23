@@ -2,56 +2,93 @@
 
 exports[`Form component renders Form 1`] = `
 <Fragment>
-  <form>
+  <form
+    onSubmit={[Function]}
+  >
     <input
+      name="apiUrl"
+      onChange={[Function]}
+      placeholder="API Url"
       type="text"
-      value={
-        Object {
-          "apiUrl": "url",
-          "fetchBody": "body",
-          "onChange": [Function],
-          "onSubmit": [Function],
-        }
-      }
+      value="url"
     />
-    <label>
-       GET 
-      <input
-        name="fetch-method"
-        type="radio"
-        value="GET"
-      />
-       
-    </label>
-    <label>
-       POST 
-      <input
-        name="fetch-method"
-        type="radio"
-        value="POST"
-      />
-       
-    </label>
-    <label>
-       PUT 
-      <input
-        name="fetch-method"
-        type="radio"
-        value="PUT"
-      />
-       
-    </label>
-    <label>
-       DELETE 
-      <input
-        name="fetch-method"
-        type="radio"
-        value="DELETE"
-      />
-       
-    </label>
+    <div>
+      <label>
+        <input
+          className="radio"
+          name="fetchMethod"
+          onChange={[Function]}
+          type="radio"
+          value="GET"
+        />
+         
+        <p>
+          GET
+        </p>
+         
+      </label>
+      <label>
+        <input
+          className="radio"
+          name="fetchMethod"
+          onChange={[Function]}
+          type="radio"
+          value="POST"
+        />
+         
+        <p>
+          POST
+        </p>
+         
+      </label>
+      <label>
+        <input
+          className="radio"
+          name="fetchMethod"
+          onChange={[Function]}
+          type="radio"
+          value="PUT"
+        />
+         
+        <p>
+          PUT
+        </p>
+         
+      </label>
+      <label>
+        <input
+          className="radio"
+          name="fetchMethod"
+          onChange={[Function]}
+          type="radio"
+          value="PATCH"
+        />
+         
+        <p>
+          PATCH
+        </p>
+         
+      </label>
+      <label>
+        <input
+          className="radio"
+          name="fetchMethod"
+          onChange={[Function]}
+          type="radio"
+          value="DELETE"
+        />
+         
+        <p>
+          DELETE
+        </p>
+         
+      </label>
+    </div>
     <textarea
-      value={Object {}}
+      name="fetchBody"
+      onChange={[Function]}
+      placeholder="Body"
+      value="body"
     />
     <button>
       Go
