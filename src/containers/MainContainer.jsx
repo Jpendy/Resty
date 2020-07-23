@@ -12,7 +12,6 @@ export default class MainContainer extends Component {
       fetchBody: ''
     }
 
-
     handleChange = ({ target }) => {
       this.setState({ [target.name]: target.value });
     }
@@ -26,15 +25,22 @@ export default class MainContainer extends Component {
     }
 
     render(){
-      console.log(this.state);
       const { fetchedArray, apiUrl, fetchMethod, fetchBody } = this.state;
 
       return (
         <>
-          <Form apiUrl={apiUrl} fetchBody={fetchBody} fetchMethod={fetchMethod} onChange={this.handleChange} onSubmit={this.handleSubmit} />
-          <section> { fetchedArray && <Display fetchedArray={fetchedArray} />} </section>
+          <Form 
+            apiUrl={apiUrl} 
+            fetchBody={fetchBody} 
+            fetchMethod={fetchMethod} 
+            onChange={this.handleChange}
+            onSubmit={this.handleSubmit}
+          />
+
+          <section> 
+            { fetchedArray && <Display fetchedArray={fetchedArray} />}
+          </section>
         </>
-      );
-        
+      );    
     }
 }
