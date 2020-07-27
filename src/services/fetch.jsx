@@ -44,6 +44,5 @@ export const fetchFunc = (url, fetchMethod, fetchBody) => {
     })
       .then(res => res.json());
   }
-
 };
 

@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 const Display = ({ fetchedArray }) => (
   <>
-    { JSON.stringify(fetchedArray) }
+    <pre>
+      { JSON.stringify(fetchedArray, null, 3) }
+    </pre>
   </>
 );
 

@@ -23,7 +23,7 @@ export default class MainContainer extends Component {
       const { apiUrl, fetchMethod, fetchBody, historyArray } = this.state;
 
       fetchFunc(apiUrl, fetchMethod, fetchBody)
-        .then(result => this.setState({ fetchedArray: result })); 
+        .then(fetchedArray => this.setState({ fetchedArray })); 
         
       this.setState({ historyArray: [...historyArray, { endPoint: apiUrl, method: fetchMethod }] });  
     }
