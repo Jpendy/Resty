@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`History component renders History 1`] = `
+<Fragment>
+  <h3>
+    History:
+  </h3>
+  <ul>
+    <li
+      key="0.9879073260333533"
+    >
+      Endpoint: end point 1 - Method: GET 
+    </li>
+    <li
+      key="0.9855736165547888"
+    >
+      Endpoint: end point 2 - Method: PUT 
+    </li>
+  </ul>
+</Fragment>
+`;
